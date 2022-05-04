@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, system-ui, -apple-system, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.06em;
+  color: #11203f;
+}
+
+.btn-default {
+  display: flex;
+  justify-content: center;
+  background-color: #873a82;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn-default:hover {
+  color: #ffffff;
+}
+
+.modal-content {
+  padding: 12px;
+  border: 0px;
+  border-radius: 1rem;
+}
+
+.modal-body {
+  padding: 0 3rem;
+}
+
+.form-control {
+  background-color: #f0f1f1;
+  border: none;
+  font-weight: 400;
+  color: #11203f;
+}
+
+.form-control:focus {
+  background-color: #f0f1f1;
+  border: none;
+  font-weight: 400;
+  color: #11203f;
+  box-shadow: 0 0 0 0.1rem #873a82;
+}
+
+.form-select {
+  background-color: #f0f1f1;
+  border: none;
+  font-weight: 400;
+  color: #11203f;
+}
+
+.form-select:focus {
+  background-color: #f0f1f1;
+  border: none;
+  font-weight: 400;
+  color: #11203f;
+  box-shadow: 0 0 0 0.1rem #873a82;
+}
+
+// Other custom styles
+.flex {
+  display: flex;
+
+  &--center {
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--justify-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+// avoid some naming conflict with  _utilities.scss class
+.m-t-2 {
+  margin-top: 2rem;
+}
+
+.m-b-3 {
+  margin-bottom: 3rem;
+}
+
+.font-lg {
+  font-size: 44px;
+}
+
+.rocket {
+  @extend .flex;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(0deg, #873a82 28.35%, #25468b 96.48%);
+  clip-path: polygon(50% 0%, -20% 100%, 120% 100%);
+}
+
+.right-arrow {
+  @extend .invert;
+  margin-left: 1rem;
+}
