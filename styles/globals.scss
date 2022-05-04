@@ -3,7 +3,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1;
   letter-spacing: -0.06em;
   color: #11203f;
   overflow-x: hidden;
@@ -95,8 +95,8 @@ body {
 }
 
 // avoid some naming conflict with  _utilities.scss class
-.m-t-2 {
-  margin-top: 2rem;
+.m-t-1 {
+  margin-top: 1rem;
 }
 
 .m-b-3 {
@@ -147,7 +147,7 @@ body {
 
 .bg-rocket-container {
   @extend .rocket-container;
-  position: absolute;
+  position: fixed;
   width: 150vw;
   height: 100vh;
   left: 0;

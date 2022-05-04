@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         <Col lg={6}>
           <div>
             <div className="m-b-3">
-              <p className="font-lg">Almost Done.</p>
-              <p className="font-lg m-t-2">Just One More Step.</p>
+              <div className="font-lg">Almost Done.</div>
+              <div className="font-lg m-t-1">Just One More Step.</div>
             </div>
             <DefailsForm showAddress />
           </div>

@@ -22,8 +22,8 @@ const Home: NextPage = () => {
         </div>
         <Modal.Body>
           <div className="m-b-3">
-            <p className="font-lg">Get A Credit Boost.</p>
-            <p className="font-lg m-t-2">Start Now.</p>
+            <div className="font-lg">Get A Credit Boost.</div>
+            <div className="font-lg m-t-1">Start Now.</div>
           </div>
           <DefailsForm onSubmit={onSubmitForm} />
         </Modal.Body>
