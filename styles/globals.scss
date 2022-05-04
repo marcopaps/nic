@@ -6,6 +6,7 @@ body {
   line-height: 16px;
   letter-spacing: -0.06em;
   color: #11203f;
+  overflow-x: hidden;
 }
 
 .btn-default {
@@ -21,13 +22,14 @@ body {
 }
 
 .modal-content {
-  padding: 12px;
   border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 1rem;
 }
 
 .modal-body {
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .form-control {
@@ -105,16 +107,59 @@ body {
   font-size: 44px;
 }
 
-.rocket {
-  @extend .flex;
-  justify-content: center;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  background: linear-gradient(0deg, #873a82 28.35%, #25468b 96.48%);
-  clip-path: polygon(50% 0%, -20% 100%, 120% 100%);
+.modal-close-container {
+  @extend .flex--center;
+  @extend .flex--justify-end;
+  @extend .pointer;
+  @extend .p-1;
 }
 
 .right-arrow {
   @extend .invert;
   margin-left: 1rem;
+}
+
+.page-layout {
+  position: relative;
+  display: flex;
+}
+
+.rocket-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.rocket::before {
+  @extend .flex;
+  content: "";
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background: linear-gradient(0deg, #873a82 0%, #25468b 96.48%);
+  clip-path: polygon(50% 0%, -30% 100%, 130% 100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.bg-rocket-container {
+  @extend .rocket-container;
+  position: absolute;
+  width: 150vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 20%;
+  z-index: -1;
+}
+.main-layout {
+  margin-top: 3rem;
+}
+
+.bg-rocket::before {
+  @extend .rocket;
+  clip-path: polygon(50% 30%, -30% 100%, 130% 100%);
 }
