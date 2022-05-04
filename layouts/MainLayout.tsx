@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 interface MainLayoutProps {
   children: React.ReactNode;
 }
@@ -5,9 +6,9 @@ interface MainLayoutProps {
 const MainLayout = (props: MainLayoutProps) => {
   return (
     <div>
-      <div className="container">
+      <Container>
         <main>{props.children}</main>
-      </div>
+      </Container>
     </div>
   );
 };
